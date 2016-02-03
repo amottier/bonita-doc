@@ -1,4 +1,6 @@
-# 3 Bonita BPM Portal interface overview
+
+3 Bonita BPM Portal interface overview
+======================================
 
 ### The User interface
 
@@ -6,18 +8,16 @@ The User interface is divided into 3 main columns: left, middle and right.
 
 The left column is for filters, the middle column for bulk actions and right column for actions and more details about the selected item.
 
-
 ### Default profiles
 
-There are three default profiles available in the Portal: **User**, **Administrator**, and (in the Efficiency and Performance editions) **Process manager**. 
+There are three default profiles available in the Portal: **User**, **Administrator**, and (in the Efficiency and Performance editions) **Process manager**.
 
-The **Administrator profile** is responsible for the administration of the Portal and particularly for the management of the Processes, the organization, the reports, the custom profiles and the Look & Feel. 
+The **Administrator profile** is responsible for the administration of the Portal and particularly for the management of the Processes, the organization, the reports, the custom profiles and the Look & Feel.
 (See example of the Administrator interface).
 
 The **Process manager profile** shares responsibility for management of Processes that are assigned.
 
 The **User profile** is responsible for performing the tasks for which they are a candidate and also for starting new cases of the Processes to which they have access.(See example of the User interface).
-
 
 ### Access to menus
 
@@ -29,17 +29,29 @@ See also [Profiles overview](/profiles-overview-2).
 
 See also [Custom profiles](/custom-profiles-2).
 
-
 Example of the Administrator interface
 
-![Portal admin interface](images/images-6_0/admin_view7.1.png)
+<div style="text-align: center;">
 
-Portal Admin interface
+![Portal admin interface](images/images-6_0/admin_view7.1.png "Portal Admin interface"){width="574" height="299"}
+<div class="caption" style="clear: both">
 
+<span style="display: block;color: #BC071B;text-align: center;margin-top: 10px">Portal Admin interface</span>
 
+</div>
+
+</div>
 
 Example of the User interface
 
-![Portal user interface](images/images-6_0/user_view7.x.png)
+<div style="text-align: center;">
 
-Portal user interface
+![Portal user interface](images/images-6_0/user_view7.x.png "Portal user interface"){width="574" height="299"}
+<div class="caption" style="clear: both">
+
+<span style="display: block;color: #BC071B;text-align: center;margin-top: 10px">Portal user interface</span>
+
+</div>
+
+</div>
+

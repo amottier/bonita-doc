@@ -1,89 +1,76 @@
-# 1.8.8 LDAP connector
+
+1.8.8 LDAP connector
+====================
 
 The LDAP connector searches in an LDAP directory and returns a list.
 
-
 Configuring an LDAP connector with the wizard:
 
+1.  In the **General** screen:
+    -   Enter a name and description for the connector.
+    -   Specify whether the connector runs at the start or the end of the step.
+    -   Specify the behavior if the connector fails.
+    -   Click ***Next***.
 
-1. In the **General** screen:
-  * Enter a name and description for the connector. 
-  * Specify whether the connector runs at the start or the end of the step.
-  * Specify the behavior if the connector fails.
-  * Click **_Next_**.
+2.  Specify the LDAP server information:\
 
-2. Specify the LDAP server information:  
-Input
-Description
-Type
+    | Input    | Description                                         | Type   |
+    |----------|-----------------------------------------------------|--------|
+    | Host     | IP address or name of server hosting LDAP directory | string |
+    | Port     | LDAP directory port number                          | number |
+    | Protocol | LDAP directory port number                          | select |
+    | user     | LDAP user name                                      | string |
+    | password | LDAP user password                                  | string |
 
-Host
-IP address or name of server hosting LDAP directory
-string
+    Then click ***Next***.
 
-Port
-LDAP directory port number
-number
+3.  Specify the search criteria:
+    +--------------------------+--------------------------+--------------------------+
+    | Input                    | Description              | Type                     |
+    +==========================+==========================+==========================+
+    | Base DN                  | the Distinguished Name   | string                   |
+    |                          | at which to start search |                          |
+    +--------------------------+--------------------------+--------------------------+
+    | Filter                   | specify a subset, e.g.   | string in accordance     |
+    |                          | (&(objectClass=person)(g | with LDAP syntax         |
+    |                          | ivenname=John))          |                          |
+    +--------------------------+--------------------------+--------------------------+
+    | Attributes               | define attributes to     | string of strings        |
+    |                          | return in result entries | separated by ","         |
+    |                          | using LDAP syntax        |                          |
+    +--------------------------+--------------------------+--------------------------+
+    | Scope                    | -   subtree: entire      | select                   |
+    |                          |     subtree starting as  |                          |
+    |                          |     the base DN          |                          |
+    |                          | -   one level: entries   |                          |
+    |                          |     immediately below    |                          |
+    |                          |     the base DN          |                          |
+    |                          | -   base: search just    |                          |
+    |                          |     the named entry      |                          |
+    +--------------------------+--------------------------+--------------------------+
+    | Size limit               | maximum number of        | number                   |
+    |                          | entries to return        |                          |
+    +--------------------------+--------------------------+--------------------------+
+    | Time limit (in seconds)  | maximum time to allow    | number                   |
+    |                          | search to run            |                          |
+    +--------------------------+--------------------------+--------------------------+
+    | Referral handling        | ignore or follow         | select                   |
+    |                          | referrals                |                          |
+    +--------------------------+--------------------------+--------------------------+
+    | Alias dereferencing      | -   always: always       | select                   |
+    |                          |     dereference aliases  |                          |
+    |                          | -   searching:           |                          |
+    |                          |     dereference aliases  |                          |
+    |                          |     only after name      |                          |
+    |                          |     resolution           |                          |
+    |                          | -   never: never         |                          |
+    |                          |     dereference aliases  |                          |
+    |                          | -   finding: dereference |                          |
+    |                          |     aliases only during  |                          |
+    |                          |     name resolution      |                          |
+    +--------------------------+--------------------------+--------------------------+
 
-Protocol
-LDAP directory port number
-select
+    Then click ***Next***.
+4.  Specify the output operations. The connector returns a list object.
+5.  Click ***Finish***.
 
-user
-LDAP user name
-string
-
-password
-LDAP user password
-string
-
-Then click **_Next_**.
-
-
-3. Specify the search criteria:
-
-Input
-Description
-Type
-
-Base DN
-the Distinguished Name at which to start search
-string
-
-Filter
-specify a subset, e.g. (&(objectClass=person)(givenname=John))
-string in accordance with LDAP syntax
-
-Attributes
-define attributes to return in result entries using LDAP syntax
-string of strings separated by ","
-
-Scope
-  * subtree: entire subtree starting as the base DN
-  * one level: entries immediately below the base DN
-  * base: search just the named entry
-select
-
-Size limit
-maximum number of entries to return
-number
-
-Time limit (in seconds)
-maximum time to allow search to run
-number
-
-Referral handling
-ignore or follow referrals
-select
-
-Alias dereferencing
-  * always: always dereference aliases
-  * searching: dereference aliases only after name resolution
-  * never: never dereference aliases
-  * finding: dereference aliases only during name resolution
-select
-
-
-Then click **_Next_**.
-4. Specify the output operations. The connector returns a list object.
-5. Click **_Finish_**.

@@ -1,37 +1,38 @@
-# 1.7.2.9 Appearance
 
-Page and form appearance is based on the Bootstrap v3.3.2 CSS framework. 
+1.7.2.9 Appearance
+==================
+
+Page and form appearance is based on the Bootstrap v3.3.2 CSS framework.
 To define the appearance of a page or form you can use an application [theme resource](/theme-resources),
-apply a Boostrap theme, 
+apply a Boostrap theme,
 or manual add a custom CSS class that you implement.
 
+Apply an application resource theme {#applying-a-living-app-theme}
+-----------------------------------
 
-## Apply an application resource theme
-
-By default, pages designed with UI designer are deployed in an [application](/applications-0) 
+By default, pages designed with UI designer are deployed in an [application](/applications-0)
 and use the theme chosen for the application.
 
+Apply a Boostrap CSS theme {#applying-a-boostrap-css-theme}
+--------------------------
 
-## Apply a Boostrap CSS theme
+Many Bootstrap CSS themes are available
+(for example at <https://bootswatch.com/>).
 
-Many Bootstrap CSS themes are available 
-(for example at [https://bootswatch.com/](https://bootswatch.com/)). 
-
-To apply a Bootstrap theme, download it and add it to your page or form as a [CSS asset](/assets-0). 
-To see the result, preview your page. 
+To apply a Bootstrap theme, download it and add it to your page or form as a [CSS asset](/assets-0).
+To see the result, preview your page.
 Applying a Bootstrap theme as a CSS asset will override the application theme.
 
+Customize appearance
+--------------------
 
-
-## Customize appearance
-
-The appearance of a page or form widget can be modified with a CSS stylesheet. 
+The appearance of a page or form widget can be modified with a CSS stylesheet.
 
 The UI designer pages use the Bootstrap CSS, so the markup provided for widgets uses Bootstrap CSS classes.
-You can add classes by using the _CSS classes_ property field available 
+You can add classes by using the *CSS classes* property field available
 for each widget in the whiteboard.
 
-
-Then, to customize the widget appearance, include a [CSS asset](/assets-0) in your page or form. 
+Then, to customize the widget appearance, include a [CSS asset](/assets-0) in your page or form.
 In this CSS file you can either override the Bootstrap CSS classes or implement the
-classes you specify in the _CSS classes_ property field.
+classes you specify in the *CSS classes* property field.
+

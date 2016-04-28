@@ -51,7 +51,7 @@ If enabled, bar files are built for the latest version of each process in the re
 If enabled, zip files are built and installed in maven repository for all REST API extensions in the repository.
 
 `buildAll`
-If enabled, bar files are built for the latest version of each process in the repository and zip files are built and installed in maven repository for all REST API extensions.
+If enabled, bar files are built for the latest version of each process in the repository and zip files are built and installed in maven repository for all REST API extensions. All UI Designer artifacts (pages, forms and layouts) are also built.
 
 `migrate`
 If enabled, you can point the `repoPath` argument to a repository of an older version than the version of the running Bonita BPM Studio. 

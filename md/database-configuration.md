@@ -116,6 +116,8 @@ First, you need to download the JDBC driver for your database system. Use links 
 Note that if you run on Linux, the JDBC driver might also be available in the distribution packages repository. On Ubuntu
 and Debian you can, for example, install the `libpostgresql-jdbc-java` package to get the PostgreSQL JDBC Driver (install in `/usr/share/java`).
 
+<a id="jdbc_driver"/>
+
 ### Add JDBC driver to application server
 
 The way to install the JDBC driver depends on the application server:

@@ -34,15 +34,21 @@ In order to configure Bonita BPM to work with your RDBMS, you need to perform th
 * Remove h2
 * Configure RDBMS-specific settings
 
+::: warning
 There are known issues with the management of XA transactions by MySQL engine and driver: see MySQL bugs [17343](http://bugs.mysql.com/bug.php?id=17343) and [12161](http://bugs.mysql.com/bug.php?id=12161) for more details.
-Thus, using MySQL database in a production environment is not recommended.
+Therefore, using MySQL database in a production environment is not recommended.
+:::
 
+::: warning
 There is a known issue between Bitronix (the Transaction Manager shipped by Bonitasoft for the Tomcat bundle & inside Deploy bundle for Tomcat) and Microsoft SQL Server driver
 (refer to: [MSDN note](https://msdn.microsoft.com/en-us/library/aa342335.aspx), [Bitronix note](http://bitronix-transaction-manager.10986.n7.nabble.com/Failed-to-recover-SQL-Server-Restart-td148.html)).
-Thus, using Bitronix as a Transaction Manager with SQL Server is not recommended. Our recommendation is to use the JBoss bundle provided by Bonitasoft.
+Therefore, using Bitronix as a Transaction Manager with SQL Server is not recommended. Our recommendation is to use the JBoss bundle provided by Bonitasoft.
+:::
 
-**Warning:** Some RDBMSs require specific configuration, which must be done before you complete your installation. 
+::: warning
+Some RDBMSs require specific configuration, which must be done before you complete your installation. 
 If you do not complete the specific configuration for your RDBMS, your installation may fail.
+:::
 
 ## Database creation
 

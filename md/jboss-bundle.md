@@ -42,18 +42,14 @@ The JBoss bundle is based on a standard JBoss installation with the following ad
 ::: info
 **Note:** Starting from Bonita BPM 7.3.0, Bonita BPM Platform configuration, including the license file, is stored in the same database than the Bonita BPM Engine data, namely in the `CONFIGURATION` table.  
 To initialize and update this database, a [*Platform setup tool*](BonitaBPM_platform_setup.md) is provided and embedded in Bonita BPM bundles.
-It will launch automatically when you start your JBoss bundle and needs some configuration.
+It will be launched automatically when you start the JBoss bundle to initialize the database.  
 :::
 
 So your bundle also contains:
-`setup`: storage of Bonita BPM Platform database (for configuration and Bonita BPM Engine data), and the tool to update it.
+`setup`: contains Bonita BPM Platform database (for configuration and engine data), and the tool to update it.
 
 
 ### Configure the JBoss bundle
-
-The configuration of Bonita BPM Platform is stored in the database, in the `CONFIGURATION` table. It can be created and updated using the [*Platform setup tool*](BonitaBPM_platform_setup.md) embedded in this bundle.
-
-<a id="database" />
 
 #### Configure Bonita BPM Platform datasource
 
@@ -66,10 +62,9 @@ Make sure your database is created before you start the configuration and make s
 
 The first step is to configure the database used by the [*Platform setup tool*](BonitaBPM_platform_setup.md).
 
-To do so, go to `<JBOSS_HOME>/`  and update the `setup/database.properties` files with the connection information of the  database.  
+To do so, go to `<JBOSS_HOME>/` and update the `setup/database.properties` files with the connection information of the  database.  
 
-The initial Bonita BPM Platform configuration, pushed upon initialization, is located in the `setup/platform_conf/initial` folder.  
-
+<a id="database" />
 
 #### Configure the JBoss server datasources
 
@@ -143,4 +138,4 @@ Once you have your JBoss bundle up and running, complete these [first steps](fir
 
 ### How to update the configuration
 
-To update the configuration after the first run please take a look at the [*Platform setup tool*](BonitaBPM_platform_setup.md#update_platform_conf)
+To update the configuration after the first run use the [*Platform setup tool*](BonitaBPM_platform_setup.md#update_platform_conf).

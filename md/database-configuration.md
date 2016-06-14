@@ -62,7 +62,7 @@ Also, note that the owner of the new schema must have following privileges:
 * CREATE INDEX
 * SELECT, INSERT, UPDATE, DELETE on created TABLE
 
-Note: CREATE TABLE and CREATE INDEX are not required after first start.
+**Note:** CREATE TABLE and CREATE INDEX are not required after first start.
 
 For creation of the database we recommend you refer to your RDBMS documentation:
 
@@ -152,9 +152,9 @@ In the same folder as the driver, add the module description file, `module.xml`.
 This file describes the dependencies the module has and the content it exports.
 It must describe the driver jar and the JVM packages that JBoss 7 does not provide automatically.
 The exact details of what must be included depend of the driver jar. 
-**Caution: **you might need to edit the `module.xml` in order to match exactly the JDBC driver jar file name.
+**Warning:** You might need to edit the `module.xml` in order to match exactly the JDBC driver jar file name.
 
-Note: by default, when JBoss starts, it removes any comments from `standalone/configuration/standalone.xml` and formats the file. 
+**Note:** By default, when JBoss starts, it removes any comments from `standalone/configuration/standalone.xml` and formats the file. 
 If you need to retrieve the previous version of this file, go to `standalone/configuration/standalone_xml_history`.
 
 #### Tomcat 7
@@ -198,7 +198,7 @@ This section explains how to configure the data sources if you are using JBoss:
 3. Uncomment the settings matching your RDBMS vendor.
 4. Modify the values for following settings to your configuration: server address, server port, database name, user name and password.
 
-**Note: ** for a first test, you might want to keep the h2 section related to Business Data Management (BDM) feature (driver and data sources configuration).
+**Note:** For a first test, you might want to keep the h2 section related to Business Data Management (BDM) feature (driver and data sources configuration).
 You can update the [configuration related to BDM](database-configuration-for-business-data.md) later.
 
 ### Tomcat
@@ -392,9 +392,7 @@ See [MSDN](https://msdn.microsoft.com/en-us/library/ms175095(v=sql.110).aspx).
 
 MySQL defines a maximum packet size on the server side. The default value for this settings are appropriate for most standard use cases.
 However, you need to increase the packet size if you see the following error: 
-```
-Error: 1153 SQLSTATE: 08S01 (ER_NET_PACKET_TOO_LARGE) Message: Got a packet bigger than 'max_allowed_packet' bytes
-```
+`Error: 1153 SQLSTATE: 08S01 (ER_NET_PACKET_TOO_LARGE) Message: Got a packet bigger than 'max_allowed_packet' bytes`
 
 You need to update the file `my.ini` (for Windows) or `my.cnf` (for Linux) to avoid the `ER_NET_PACKET_TOO_LARGE` problem.
 Look for `max_allowed_packet` settings and reduce the value.

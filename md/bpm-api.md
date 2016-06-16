@@ -16,27 +16,27 @@ The ID of the activity (a long value).
 ```json
 {
   "id": "the activity id (long)",
-  "displayDescription": "the human readable activity description (string)",
-  "executedBySubstitute": "the id (long) of the user who really performed this activity in case where a substitute did it, or 0 if the activity was not performed by a substitute",
-  "caseId": "the case id (long) that is associated with this activity", 
-  "parentCaseId": "the parent case id (long) that is associated with this activity's case",
-  "rootCaseId": "the root case initiator id (long) that is associated with this activity's case",
-  "processId": "the process id (long) that is associated with this activity",
-  "rootContainerId": "the root process id (long) of the root case that is associated with this activity",
-  "state": "the current state of the activity (string,  for example, ready, completed, failed)",
   "type": "the activity type (string)",
-  "assigned_id": "the user id (long) that this activity is assigned to, or 0 if it is unassigned"
-  "assigned_date": "the date ('yyyy-MM-dd HH:mm:ss.SSS') when the current activity was assigned, for example '2014-10-17 16:05:42.626'",
-  "executedBy": "the id (long) of the user who executed the activity, or 0 if the activity has not been executed",
-  "priority": "the priority (string) of the current activity",
-  "actorId": "the id (long) of the actor that can execute this activity, null otherwise",
+  "name": "the activity technical name (string)",
+  "displayName": "the human readable activity name (string)",
   "description": "the activity description (string)",
-  "name": "the activity name (string)",
-  "reached_state_date": "the date ('yyyy-MM-dd HH:mm:ss.SSS') when this activity reached the current state, for example '2014-10-17 16:05:42.626'"
-  "displayName": "the display name (string) of this activity",
-  "dueDate": "the date ('yyyy-MM-dd HH:mm:ss.SSS') when this activity is due, for example '2014-10-17 16:05:42.626'",
+  "displayDescription": "the human readable activity description (string)",
+  "state": "the current state of the activity (string, possible values: ready, completed, failed)",
+  "reached_state_date": "the date ('yyyy-MM-dd HH:mm:ss.SSS') when this activity reached the current state, for example '2014-10-17 16:05:42.626'",
   "last_update_date": "the date ('yyyy-MM-dd HH:mm:ss.SSS') when this activity was last updated, for example '2014-10-17 16:05:42.626)",
-  "parentTaskId": "in the case of a subtask, the parent task id (long)"
+  "dueDate": "the date ('yyyy-MM-dd HH:mm:ss.SSS') when this activity is due, for example '2014-10-17 16:05:42.626'",
+  "priority": "the priority (string) of the current activity",
+  
+  "processId": "the process definition id (long) of the case which define this activity",
+  "parentCaseId": "the immediate containing case id (long, a.k.a process instance id)",
+  "rootCaseId": "the top/root case id (long, a.k.a process instance id). In the case of an event sub process, parentCaseId will the id of the case called while rootCaseId will be the one from the caller case",
+  "rootContainerId": "same as rootCaseId",
+  
+  "executedBy": "the id (long) of the user who performed this activity. The activity has to be a human task otherwise its value will be 0",
+  "executedBySubstitute": "the id (long) of the user who did actually performed the activity in the case of has been done in the name of someone else. Value is 0 otherwise",
+  "actorId": "the id (long) of the actor that can execute this activity, null otherwise",
+  "assigned_id": "the user id (long) that this activity is assigned to, or 0 if it is unassigned",
+  "assigned_date": "the date ('yyyy-MM-dd HH:mm:ss.SSS') when the current activity was assigned, for example '2014-10-17 16:05:42.626'",
 }
 ```
 

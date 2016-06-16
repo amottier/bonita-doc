@@ -31,7 +31,7 @@ The methods used for this resource are:
 
 This action creates (assigns) a membership to a user.
 Request url
-http://../API/identity/membership
+/API/identity/membership
 
 Request method
 
@@ -75,7 +75,7 @@ Response payload
 
 This action search memberships of a user.
 Request url
-http://../API/identity/membership?p=0&c=10&f=user\_id%3d<the id of the user\>
+/API/identity/membership?p=0&c=10&f=user\_id%3d<the id of the user\>
 
 Request method
 
@@ -138,7 +138,7 @@ Response payload
 
 Delete a membership of a user using the group id and role id.
 Request url
-http://../API/identity/membership/<the id of the user\>/<the id of the group\>/<the id of the role\>
+/API/identity/membership/<the id of the user\>/<the id of the group\>/<the id of the role\>
 
 Request method
 

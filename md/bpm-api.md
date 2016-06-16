@@ -3063,7 +3063,7 @@ The methods used for this resource are:
 
 #### Create a process
 
-A process resource is created using the content of a `.bar` file that has previously been [uploaded](manage-files-using-upload-servlet-and-rest-api.md), using the `processUpload` servlet `http://.../bonita/portal/processUpload`,
+A process resource is created using the content of a `.bar` file that has previously been [uploaded](manage-files-using-upload-servlet-and-rest-api.md), using the `processUpload` servlet `/bonita/portal/processUpload`,
 to get the process archive path.
 
 * **URL**  

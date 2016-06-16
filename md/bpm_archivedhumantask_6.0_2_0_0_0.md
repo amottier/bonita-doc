@@ -50,7 +50,7 @@ The methods used for this resource are:
 
 Description
 Request url
-http://../API/bpm/archivedHumanTask/
+/API/bpm/archivedHumanTask/
 
 Request method
 

@@ -28,7 +28,7 @@ The methods used for this resource are:
 
 ### Retrieve a list of archived connector instances
 Request url
-http://../API/bpm/archivedConnectorInstance
+/API/bpm/archivedConnectorInstance
 
 Request method
 

@@ -36,7 +36,7 @@ The methods available for this resource are:
 
 ### Retrieving a activity instance variable
 Request url
-http://../API/bpm/activityVariable/\[activity\_id\]/\[variable\_name\]
+/API/bpm/activityVariable/\[activity\_id\]/\[variable\_name\]
 
 Request method
 

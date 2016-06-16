@@ -49,7 +49,7 @@ The methods used for this resource are:
 
 Retrieve the flow node information of the given id.
 Request url
-http://../API/bpm/flowNode/{id}
+/API/bpm/flowNode/{id}
 
 Request method
 
@@ -83,7 +83,7 @@ The following parameters are available:
 
 Get the details of flow node 77456\.
 Request url
-http://../API/bpm/flowNode/77456
+/API/bpm/flowNode/77456
 
 Request method
 
@@ -123,7 +123,7 @@ Response payload
 
 Search for flow nodes using given parameters. Flow nodes in states completed, cancelled, or aborted are not retrieved. The search returns an array of flow nodes.
 Request url
-http://../API/bpm/flowNode/?_search\_options_
+/API/bpm/flowNode/?_search\_options_
 
 Request method
 
@@ -173,7 +173,7 @@ The following parameters are available:
 
 Get all the active flow nodes named "Escalate", ordering the results by state.
 Request url
-http://../API/bpm/flowNode/?p=0&c=10&f=name%3dEscalate&o%3dstate
+/API/bpm/flowNode/?p=0&c=10&f=name%3dEscalate&o%3dstate
 
 Request method
 
@@ -191,7 +191,7 @@ An array of JSON representations of flow nodes
 
 Replay the flow node. (only in Performance edition)
 Request url
-http://../API/bpm/flowNode/{id}
+/API/bpm/flowNode/{id}
 
 Request method
 

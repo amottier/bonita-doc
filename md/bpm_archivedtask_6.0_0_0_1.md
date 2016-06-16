@@ -44,7 +44,7 @@ The methods used for this resource are:
 
 ### Read an archived task
 Request url
-http://../API/bpm/archivedTask/{taskId}
+/API/bpm/archivedTask/{taskId}
 
 Request method
 
@@ -99,7 +99,7 @@ Response payload
 
 ### Search archived tasks
 Request url
-http://../API/bpm/archivedTask
+/API/bpm/archivedTask
 
 Request method
 

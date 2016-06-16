@@ -31,7 +31,7 @@ The methods used for this resource are:
 
 You can read a process parameter using its compound id (process\_id/name) 
 Request url
-http://../API/bpm/processParameter/{process\_id}/{name}
+/API/bpm/processParameter/{process\_id}/{name}
 
 Request method
 
@@ -68,7 +68,7 @@ Response payload
 
 When you search for a processParameter, do not provide the process\_version or process\_name. They are needed only when you read a processParameter.
 Request url
-http://../API/bpm/processParameter
+/API/bpm/processParameter
 
 Request method
 
@@ -108,7 +108,7 @@ Response payload
 
 You can update only a process parameter value using the API. If you specify values for other fields in the update request, they are ignored.
 Request url
-http://../API/bpm/processParameter/{process\_id}/{name}
+/API/bpm/processParameter/{process\_id}/{name}
 
 Request method
 

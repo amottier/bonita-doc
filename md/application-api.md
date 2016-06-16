@@ -279,7 +279,7 @@ The methods used for this resource are:
 #### Create an application menu item
 
 * **URL**  
-  `http://../API/living/application-menu`
+  `/API/living/application-menu`
 * **Method**  
   POST
 * **Request Payload**  
@@ -311,8 +311,8 @@ The methods used for this resource are:
 #### Get an application menu item
 
 * **URL**  
-  `http://../API/living/application-menu/:applicationMenuId`  
-  _Example_: `http://../API/living/application-menu/1`
+  `/API/living/application-menu/:applicationMenuId`  
+  _Example_: `/API/living/application-menu/1`
 * **Method**  
   `GET`
 * **Success Response**
@@ -333,7 +333,7 @@ The methods used for this resource are:
 #### Delete an application menu item
 
 * **URL**  
-  `http://../API/living/application-menu/:applicationMenuId`
+  `/API/living/application-menu/:applicationMenuId`
 * **Method**  
   `DELETE`
 * **Success Response**  
@@ -342,8 +342,8 @@ The methods used for this resource are:
 #### Update an application menu item
 
 * **URL**  
-  `http://../API/living/application-menu/:applicationMenuId`  
-  _Example_: `http://../API/living/application-menu/1`
+  `/API/living/application-menu/:applicationMenuId`  
+  _Example_: `/API/living/application-menu/1`
 * **Method**  
   `PUT`
 * **Request Payload**  
@@ -366,8 +366,8 @@ The methods used for this resource are:
 #### Search the application menu items
 
 * **URL**  
-  `http://../API/living/application-menu`  
-  _Example_: `http://../API/living/application-menu?p=0&c=2&f=applicationId%3d1`
+  `/API/living/application-menu`  
+  _Example_: `/API/living/application-menu?p=0&c=2&f=applicationId%3d1`
 * **Method**  
   `GET`
 * **Data Params**  
@@ -431,7 +431,7 @@ The methods used for this resource are:
 #### Create an application page
 
 * **URL**  
-  `http://../API/living/application-page`  
+  `/API/living/application-page`  
 * **Method**  
   `POST`
 * **Request Payload**  
@@ -459,7 +459,7 @@ The methods used for this resource are:
 #### Get an application page
 
 * **URL**  
-  `http://../API/living/application-page/:applicationPageId`  
+  `/API/living/application-page/:applicationPageId`  
 * **Method**  
   `GET`
 * **Request Payload**  
@@ -478,15 +478,15 @@ The methods used for this resource are:
 #### Delete an application page
 
 * **URL**  
-  `http://../API/living/application-page/{applicationPageId}`  
+  `/API/living/application-page/{applicationPageId}`  
 * **Method**  
   `DELETE`
 
 #### Search for an application page
 
 * **URL**  
-  `http://../API/living/application-page`  
-  _Example_: `http://../API/living/application-page?p=0&c=2&d=pageId&f=applicationId%3d1`
+  `/API/living/application-page`  
+  _Example_: `/API/living/application-page?p=0&c=2&d=pageId&f=applicationId%3d1`
 * **Method**  
   `GET`
 * **Data Params**  

@@ -33,7 +33,7 @@ The methods used for this resource are:
 
 Search for BPM timer event triggers.
 Request url
-http://../API/bpm/timerEventTrigger
+/API/bpm/timerEventTrigger
 
 Request method
 
@@ -76,7 +76,7 @@ Response payload
 
 Specify the next execution date of a timer event trigger.
 Request url
-http://../API/bpm/timerEventTrigger/\[timerEventTriggerID\]
+/API/bpm/timerEventTrigger/\[timerEventTriggerID\]
 
 Request method
 

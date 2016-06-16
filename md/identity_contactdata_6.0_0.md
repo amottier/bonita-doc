@@ -36,7 +36,7 @@ The methods used for this resource are:
 
 ### Create contact information
 Request url
-http://../API/identity/professionalcontactdata (or personalcontactdata)
+/API/identity/professionalcontactdata (or personalcontactdata)
 
 Request method
 
@@ -97,7 +97,7 @@ Response payload
 
 ### Read a user's contact information
 Request url
-http://../API/identity/professionalcontactdata(or personalcontactdata)/<user\_id\>
+/API/identity/professionalcontactdata(or personalcontactdata)/<user\_id\>
 
 Request method
 
@@ -142,7 +142,7 @@ Response payload
 
 ### Update a user's contact information
 Request url
-http://../API/identity/professionalcontactdata(or personalcontactdata)/<user\_id\>
+/API/identity/professionalcontactdata(or personalcontactdata)/<user\_id\>
 
 Request method
 

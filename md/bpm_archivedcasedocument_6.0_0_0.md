@@ -41,7 +41,7 @@ The methods used for this resource are:
 
 You can use a single GET method to return all the documents that match the specified filters and [search parameters](rest-api-overview.md).
 Request url
-http://../API/bpm/archivedCaseDocument?parameters
+/API/bpm/archivedCaseDocument?parameters
 
 Request method
 

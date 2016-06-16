@@ -32,7 +32,7 @@ The methods used for this resource are:
 
 ### Create a role
 Request url
-http://../API/identity/role
+/API/identity/role
 
 Request method
 
@@ -82,7 +82,7 @@ Response payload
 
 ### Read a role
 Request url
-http://../API/identity/role/<role\_id\>
+/API/identity/role/<role\_id\>
 
 Request method
 
@@ -122,7 +122,7 @@ Response payload
 
 ### Search for a role
 Request url
-http://../API/identity/role
+/API/identity/role
 
 Request method
 
@@ -183,7 +183,7 @@ Response payload
 
 ### Update a role
 Request url
-http://../API/identity/role/<role\_id\>
+/API/identity/role/<role\_id\>
 
 Request method
 
@@ -232,7 +232,7 @@ Response payload
 
 ### Delete a role
 Request url
-http://../API/identity/role/<role\_id\>
+/API/identity/role/<role\_id\>
 
 Request method
 

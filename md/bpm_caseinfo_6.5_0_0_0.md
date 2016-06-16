@@ -31,7 +31,7 @@ The method used for this resource is:
 
 Retrieve information about the flow nodes of the case identified by the given ID.
 Request url
-http://../API/bpm/caseInfo/{id}
+/API/bpm/caseInfo/{id}
 
 Request method
 

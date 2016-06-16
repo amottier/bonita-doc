@@ -48,7 +48,7 @@ The methods used for this resource are:
 
 Retrieve the flow node information of the given id.
 Request url
-http://../API/bpm/archivedFlowNode/{id}
+/API/bpm/archivedFlowNode/{id}
 
 Request method
 
@@ -66,7 +66,7 @@ The JSON representation of the specified flownode
 
 Search for flow nodes using given parameters. Flow nodes in state completed, cancelled, aborted are not retrieved. It returns an array of flow nodes.
 Request url
-http://../API/bpm/archivedFlowNode
+/API/bpm/archivedFlowNode
 
 Request method
 

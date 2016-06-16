@@ -22,7 +22,7 @@ The methods used for this resource are:
 
 This is the only method supported by this resource. It should be used to list the problems that need to be solved before a process can be used.
 Request url
-http://../API/bpm/processResolutionProblem
+/API/bpm/processResolutionProblem
 
 Request method
 
@@ -48,7 +48,7 @@ Filtering on the process definition ID is mandatory.
 
 #### Example
 Request url
-http://../API/bpm/processResolutionProblem?p=0&c=100&f=process\_id%3d8802838415753448432
+/API/bpm/processResolutionProblem?p=0&c=100&f=process\_id%3d8802838415753448432
 
 Request method
 

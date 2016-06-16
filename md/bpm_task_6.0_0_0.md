@@ -44,7 +44,7 @@ The methods used for this resource are:
 
 ### Read a task
 Request url
-http://../API/bpm/task/{taskId}
+/API/bpm/task/{taskId}
 
 Request method
 
@@ -100,7 +100,7 @@ Response payload
 
 ### Update a task
 Request url
-http://../API/bpm/task/{taskId}
+/API/bpm/task/{taskId}
 
 Request method
 
@@ -134,7 +134,7 @@ empty
 
 ### Search tasks
 Request url
-http://../API/bpm/task
+/API/bpm/task
 
 Request method
 

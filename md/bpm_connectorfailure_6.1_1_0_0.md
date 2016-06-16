@@ -27,7 +27,7 @@ The methods used for this resource are:
 
 Retrieve the information regarding the failure of the connector execution.
 Request url
-http://../API/bpm/connectorFailure/<connectorFailure\_id\>
+/API/bpm/connectorFailure/<connectorFailure\_id\>
 
 Request method
 

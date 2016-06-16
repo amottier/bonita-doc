@@ -132,7 +132,7 @@ Gets the business data attribute of business data according to its identifier an
 Request url
 
 * **URL**  
-  `http://../API/bdm/businessData/:businessDataType/:persistenceId/:attributeName`  
+  `/API/bdm/businessData/:businessDataType/:persistenceId/:attributeName`  
   _Example_: `/API/bdm/businessData/com.company.model.Client/2/industry`
 * **Method**  
   `GET`
@@ -158,7 +158,7 @@ Request url
 Get the business data specified by their identifiers.
 
 * **URL**  
-  `http://../API/bdm/businessData/:businessDataType/findByIds`  
+  `/API/bdm/businessData/:businessDataType/findByIds`  
   _Example_: `/API/bdm/businessData/com.company.model.Contract/findByIds?ids=1,83`
 * **Method**  
   `GET`
@@ -241,7 +241,7 @@ The methods used for this resource are:
 The query can be either a default or a custom query.
 
 * **URL**  
-  `http://../API/bdm/businessData/_businessDataType_?q=_queryName_&p=0&c=10&f=param=value`  
+  `/API/bdm/businessData/_businessDataType_?q=_queryName_&p=0&c=10&f=param=value`  
   _Example_: Call the findEmployeeByFirstNameAndLastName query : 
   ```
   /API/bdm/businessData/com.company.model.Employee?q=findEmployeeByFirstNameAndLastName&p=0&c=10&f=firstName=John&f=lastName=Doe
@@ -333,7 +333,7 @@ The methods used for this resource are:
 
 Get the named business data reference ({businessDataName} string) defined in the case ({caseId} long).
 * **URL**  
-  `http://../API/bdm/businessDataReference/:caseId/:businessDataName`  
+  `/API/bdm/businessDataReference/:caseId/:businessDataName`  
   _Example_: `/API/bdm/businessDataReference/1/Contracts`
 * **Method**  
   `GET`

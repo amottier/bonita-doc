@@ -43,7 +43,7 @@ ID of the Object: a long value
 ### Read a case
 
 You can get a case by using its identifier. Request url
-http://../API/bpm/case/_id_
+/API/bpm/case/_id_
 
 Request method
 
@@ -65,7 +65,7 @@ Available values: started\_by, startedBySubstitute, processDefinitionId.
 
 #### Example
 Request url
-http://../API/bpm/case/1
+/API/bpm/case/1
 
 Response payload
 
@@ -150,7 +150,7 @@ _http://localhost:8080/API/bpm/case?p=0&c=10_
 * _Long_ c: the number of result returned
 * _String_ d: a string and a resource identifier associated to deploy a resource. available values (started\_by, startedBySubstitute, processDefinitionId)
 Request URL
-http://../API/bpm/case/
+/API/bpm/case/
 
 Request Method
 GET
@@ -174,7 +174,7 @@ JSON representations of matching cases
 
 #### Example
 Request URL
-http://../API/bpm/case/
+/API/bpm/case/
 
 Request Method
 GET
@@ -320,7 +320,7 @@ Response
 
 ### Create a case
 Request url
-http://../API/bpm/case
+/API/bpm/case
 
 Request method
 
@@ -340,7 +340,7 @@ The JSON representation of a case resource
 
 #### Example 1: Create a case without variables
 Request url
-http://../API/bpm/case
+/API/bpm/case
 
 Request method
 
@@ -368,7 +368,7 @@ Response payload
 
 #### Example 2: Create a case with variables
 Request url
-http://../API/bpm/case
+/API/bpm/case
 
 Request method
 
@@ -410,7 +410,7 @@ Response payload
 
 ### Delete a case
 Request url
-http://../API/bpm/case
+/API/bpm/case
 
 Request method
 
@@ -429,7 +429,7 @@ empty
 
 ### Retrieve the case context
 Request url
-http://../API/bpm/case/_caseId_/context
+/API/bpm/case/_caseId_/context
 
 Request method
 

@@ -29,7 +29,7 @@ The methods used for this resource are:
 ### Get a case variable
   
 Request url
-http://../API/bpm/caseVariable/\[caseId\]/\[variableName\]
+/API/bpm/caseVariable/\[caseId\]/\[variableName\]
 
 Request method
 
@@ -73,7 +73,7 @@ Response payload
 ### Update a case variable
 
 Request url
-http://../API/bpm/caseVariable/\[caseId\]/\[variableName\]
+/API/bpm/caseVariable/\[caseId\]/\[variableName\]
 
 Request method
 
@@ -112,7 +112,7 @@ N/A
 ### Search for a list of case variables
 
 Request url
-http://../API/bpm/caseVariable?p=\[firstPageNumber\]&c=\[pageSize\]&f=case\_id%3d\[caseId\]
+/API/bpm/caseVariable?p=\[firstPageNumber\]&c=\[pageSize\]&f=case\_id%3d\[caseId\]
 
 Request method
 

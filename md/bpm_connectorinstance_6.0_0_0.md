@@ -29,7 +29,7 @@ The methods used for this resource are:
 ### Retrieve a list of connector instances attached to a process or a flow node
 
 Request url
-http://../API/bpm/connectorInstance
+/API/bpm/connectorInstance
 
 Request method
 

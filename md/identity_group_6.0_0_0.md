@@ -34,7 +34,7 @@ The methods used for this resource are:
 
 ### Create a group
 Request url
-http://../API/identity/group
+/API/identity/group
 
 Request method
 
@@ -85,7 +85,7 @@ Response payload
 
 ### Read a group
 Request url
-http://../API/identity/group/<group\_id\>
+/API/identity/group/<group\_id\>
 
 Request method
 
@@ -127,7 +127,7 @@ Response payload
 
 ### Search for a group
 Request url
-http://../API/identity/group
+/API/identity/group
 
 Request method
 
@@ -200,7 +200,7 @@ Response payload
 
 ### Update a group
 Request url
-http://../API/identity/group/<group\_id\>
+/API/identity/group/<group\_id\>
 
 Request method
 
@@ -251,7 +251,7 @@ Response payload
 
 ### Delete a group
 Request url
-http://../API/identity/group/<group\_id\>
+/API/identity/group/<group\_id\>
 
 Request method
 

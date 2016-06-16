@@ -49,7 +49,7 @@ The methods used for this resource are:
 
 #### Retrieve an archivedUserTask
 Request url
-http://../API/bpm/archivedUserTask/_id_
+/API/bpm/archivedUserTask/_id_
 
 Request method
 

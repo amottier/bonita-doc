@@ -48,7 +48,7 @@ The methods used for this resource are:
 
 ### Retrieve a userTask
 Request url
-http://../API/bpm/userTask/_userTaskId_
+/API/bpm/userTask/_userTaskId_
 
 Request method
 
@@ -225,7 +225,7 @@ Response
 
 ### Retrieve the userTask context
 Request url
-http://../API/bpm/userTask/_userTaskId_/context
+/API/bpm/userTask/_userTaskId_/context
 
 Request method
 

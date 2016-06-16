@@ -68,11 +68,11 @@ By default, the file contains a compound permission that corresponds to each pag
 
 For example: `userlistingadmin=[profile_visualization, process_comment, organization_visualization, tenant_platform_visualization, organization_management]`
 
-This specifies the permissions that are needed for the Bonita BPM Portal Administrator page that lists all the users in the tenant.
+This specifies the REST API permissions that are granted with the Bonita BPM Portal Administrator page that lists all the users in the tenant.
 
-By default, there is a compound permission defined for each page in the standard Bonita BPM Portal.
-There is one line for each custom page. These lines are added automatically when you install the custom page in the portal.
-You can also update the file manually to add custom compound configurations.
+By default, there is a compound permission defined for each page in the standard Bonita BPM Portal and there is also one for each provided custom page.
+
+When you install a custom page in the portal, if the page declares its resources properly, then it will add a line in this file. Then all the users being able to access this page (because it is part of a custom profile or Living Application they have access to) will also be automatically granted the necessary permissions to call the required REST API resources.
 
 #### Custom permissions mapping
 
@@ -239,6 +239,15 @@ Depending on the permissions that a user of the page already has, it might be ne
 
 When a new [custom profile](custom-profiles.md) is created, the permissions mappings are updated in the configuration files and in the cache.
 It is not necessary to restart the application server to activate security for the new custom profile.
+
+## Granting permissions to a given resource
+
+If you only develop custom pages and you declare the resources they use properly, you should never have to create custom permissions.
+However, you may need to do so if you need to manually grant permissions to a given REST API resource (so that it can be called programatically for example). In order to do that, you need to:
+* look into the file `resources-permissions-mapping.properties` for the permissions that grant access to the resource.
+For example, in order to perform a GET on `bpm/task`, I can see that I need the permisssion `flownode_visualization` (syntaxe: `GET|bpm/task=[flownode_visualization]`)
+* then edit the file `custom-permissions-mapping.properties` to give the permission `flownode_visualization` to the required profiles or users.
+For example, to add the permission to the user walter.bates (username), add the following line : `user|walter.bates=[flownode_visualization]`
 
 <a id="activate"/>
 
